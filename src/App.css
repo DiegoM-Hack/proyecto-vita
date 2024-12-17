@@ -5,6 +5,32 @@
   text-align: center;
 }
 
+.App {
+  text-align: center;
+}
+
+.contenedor-padre {
+  display: flex;
+}
+
+.hijo {
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  text-align: center;
+  border-radius: 15px;
+  padding: 30px;
+  box-sizing: border-box;/* Esto incluye contenido, padding y borde */
+  
+  padding: 0px;
+  border: 5px solid black;
+  margin: 20px;
+}
+
+h2{
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
