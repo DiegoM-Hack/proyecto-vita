@@ -1,5 +1,7 @@
-import './App.css';
-function Estudios() {
+
+import react from 'react'
+
+export function Estudios () {
     return (
       <div className="App">
         <header className="App-header">

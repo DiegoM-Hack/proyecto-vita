@@ -1,5 +1,6 @@
-import './App.css';
-function herramientas() {
+
+
+export function Herramientas() {
     return (
       <div className="App">
         <header className="App-header">
@@ -13,4 +14,4 @@ function herramientas() {
     );
   }
   
-  export default herramientas;
+  export default Herramientas;

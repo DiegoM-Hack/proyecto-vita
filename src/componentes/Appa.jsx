@@ -1,8 +1,10 @@
 
-import './App.css';
 
-function datos() {
-    return (
+
+function Appa() {
+
+  return (
+    <>
       <div className="App">
         <header className="App-header">
           <h2>Datos personales: </h2>
@@ -15,7 +17,9 @@ function datos() {
   
         </header>
       </div>
-    );
-  }
-  
-  export default datos;
+      
+    </>
+  )
+}
+
+export default Appa

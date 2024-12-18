@@ -1,8 +1,9 @@
-import './App.css';
-import deporte4 from './imagenes/deporte4.jpg';
-import deporte5 from './imagenes/deporte5.jpg';
 
-function deportes() {
+import deporte4 from '../deporte4.jpg';
+import deporte5 from '../deporte5.jpg';
+import '../App.css'
+
+export function Deportes() {
     return (
       <div className="App">
         <header className="App-header">
@@ -11,18 +12,18 @@ function deportes() {
           <div className="contenedor-padre">
            <div className="hijo">
             <p>Futból</p>
-             <img src={"./public/deporte2"} className="App-logo" alt="logo" />
+             <img src={'../public/deporte2.png'} className="App-logo" alt="logo" />
            </div>
            <div className="hijo">
             <p>League of Legends</p>
-             <img src={"./public/deporte3"} className="App-logo" alt="logo" />
+             <img src={"../public/deporte3.jpg"} className="App-logo" alt="logo" />
            </div>
            <div className="hijo">
             <p>Tae kwon do</p>
             <img src={deporte4} className="App-logo" alt="logo" />
            </div>
            <div className="hijo">
-            <p>Tae kwon do</p>
+            <p>Basquet</p>
             <img src={deporte5} className="App-logo" alt="logo" />
            </div>
           </div>
@@ -32,4 +33,4 @@ function deportes() {
     );
   }
   
-  export default deportes;
+  export default Deportes;
