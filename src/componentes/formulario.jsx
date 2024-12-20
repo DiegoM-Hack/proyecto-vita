@@ -25,6 +25,7 @@ const FormularioRegistro = () => {
     <div className="formulario-container">
       <h2>Registro de Estudiante</h2>
       <form onSubmit={handleSubmit} className="formulario">
+        {/* Campo de nombre */}
         <label>
           Nombre:
           <input
@@ -35,6 +36,7 @@ const FormularioRegistro = () => {
           />
         </label>
 
+        {/* Campo de correo */}
         <label>
           Correo electrónico:
           <input
@@ -45,6 +47,7 @@ const FormularioRegistro = () => {
           />
         </label>
 
+         {/* Campo de carrera */}
         <label>
           Carrera:
           <input
@@ -55,6 +58,7 @@ const FormularioRegistro = () => {
           />
         </label>
 
+         {/* Campo de materia */}
         <label>
           Materia:
           <input
@@ -65,6 +69,7 @@ const FormularioRegistro = () => {
           />
         </label>
 
+         {/* Campo de fecha */}
         <label>
           Fecha de inscripción:
           <input
@@ -74,30 +79,35 @@ const FormularioRegistro = () => {
           />
         </label>
 
+        {/* Nuevo campo para ingresar el número de crédito */}
         <label>
           Número de Crédito:
           <input
-            type="text"
-            value={numeroCredito}
-            onChange={(e) => setNumeroCredito(e.target.value)}
-            placeholder="Ingresa el número de crédito"
+            type="text" //Especifica que es un campo de texto.
+            value={numeroCredito} // Sincroniza el valor con el estado `docente`
+            onChange={(e) => setNumeroCredito(e.target.value)} // Actualiza el estado cuando el usuario escribe.
+            placeholder="Ingresa el número de crédito" // Texto guía.
           />
         </label>
 
+        {/* Nuevo campo para ingresar el nombre del docente */}
         <label>
           Docente:
           <input
-            type="text"
-            value={docente}
-            onChange={(e) => setDocente(e.target.value)}
-            placeholder="Ingresa el nombre del docente"
+            type="text" //Especifica que es un campo de texto.
+            value={docente} // Sincroniza el valor con el estado `docente`
+            onChange={(e) => setDocente(e.target.value)} // Actualiza el estado cuando el usuario escribe.
+            placeholder="Ingresa el nombre del docente" // Texto guía.
           />
         </label>
 
+        {/* Botón de envío */}
         <button type="submit">Registrar</button>
       </form>
 
-      {mensaje && <div className="mensaje-confirmacion">{mensaje}</div>}
+      {/* Mensaje de confirmación */}
+      {mensaje && 
+      <div className="mensaje-confirmacion">{mensaje}</div>}
     </div>
   );
 };
