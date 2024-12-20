@@ -17,7 +17,17 @@ function Appa() {
   
         </header>
       </div>
+
+      <input
+  type="text"
+  value={nombre}
+  onChange={(e) => setNombre(e.target.value)}
+  placeholder="Ingresa tu nombre"
+/>
       
+
+
+
     </>
   )
 }

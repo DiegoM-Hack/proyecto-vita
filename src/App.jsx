@@ -6,7 +6,7 @@ import { Herramientas } from './componentes/herramientas'
 
 import {Deportes} from './componentes/deportes'
 
-
+import FormularioRegistro from './componentes/formulario'
 
 import { useState } from 'react'
 
@@ -25,6 +25,9 @@ function Appa() {
       <Herramientas/>
       
       <Deportes />
+
+      <FormularioRegistro />
+
     </>
   )
 }
